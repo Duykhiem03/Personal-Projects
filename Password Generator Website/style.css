@@ -1,0 +1,92 @@
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: url(images/background.jpg) no-repeat center center/ cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    font-weight: 400;
+}
+
+.box-area {
+    height: 30px;
+    width: auto;
+}
+
+.require-container {
+    position: relative;
+    left: 20%;
+}
+.require {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.check-box {
+    height: 30px;
+    width: 30px;
+}
+
+.submitBtn {
+    margin: 20px auto;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+}
+
+.submitBtn:hover {
+    background-color: rgb(5, 140, 5);
+    color: #fff;
+}
+
+#copyBtn:active {
+    background-color: rgb(3, 128, 3);
+    color: #fff;
+}
+
+.result {
+    margin-bottom: 20px;
+}
+
+#result-area {
+    border: 2px solid #222;
+    padding: 10px 100px;
+}

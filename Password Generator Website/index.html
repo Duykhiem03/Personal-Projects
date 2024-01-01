@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <title>Password generation</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+
+        <div class="require-container">
+            <div class="require">
+                <h4>Pass length: </h4>
+                <!-- <input type="number" id="pass-length" class="box-area" min="8" autofocus autocomplete="off"> -->
+                <input type="range" id="pass-length" min="8" max="30" value="1">
+                <span id="value">8</span>
+            </div>
+            <div class="require">
+                <h4>Contains Symbols - [*, &, #, ...]</h4>
+                <input type="checkbox" id="symbol" class="check-box">
+            </div>
+            <div class="require">
+                <h4>Contains Numbers - [0, 1, 2, ...]</h4>
+                <input type="checkbox" id="number" class="check-box">
+            </div>
+            <div class="require">
+                <h4>Contains Uppercase Letters - [A, B, C, ...]</h4>
+                <input type="checkbox" id="upper" class="check-box">
+            </div>
+            <div class="require">
+                <h4>Contains Lowercase Letters - [a, b, c, ...]</h4>
+                <input type="checkbox" id="lower" class="check-box">
+            </div>
+        </div>
+        <button class="submitBtn">Generate</button>
+        <div class="result">
+            <span id="result-area"></span>
+            <button id="copyBtn">Copy</button>
+        </div>        
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
